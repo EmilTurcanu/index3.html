@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DOWNLOAD ICON</title>
+    <style>
+        .download {
+            border: 2px solid #ff6600;
+            padding: 20px;
+            font-family: Arial, sans-serif;
+        }
+        .download .icon .cloud {
+            display: inline-block;
+            width: 50px;
+            height: 50px;
+            /*border: 1px solid black;*/
+            background-image: 
+                radial-gradient(
+                    circle, #ff8080 50%, transparent 50%
+                    ),
+                radial-gradient(
+                    ellipse, #ff8080 50%, transparent 50%
+                ),
+                radial-gradient(
+                    ellipse, #ff8080 50%, transparent 50%
+                );
+            background-size: 
+                50% 50%,
+                80% 50%,
+                70% 50%;
+            background: 
+                repeat-x,
+                no-repeat,
+                no-repeat;
+            background-position: 
+                left bottom,
+                center bottom,
+                center 70%;
+        }
+        .download .icon .arrow {
+            display: inline-block;
+            width: 15px;
+            height: 15px;
+            /*border: 1px solid black;*/
+            background-image: 
+                linear-gradient(
+                    90%,
+                    transparent 30%,
+                    #800000 30%,
+                    #800000 70%,
+                    transparent 70%
+                ),
+                conic-gradient(
+                    at center bottom,
+                    transparent 0 0.125turn,
+                    #800000 0.125turn 0.875turn,
+                    transparent 0.875turn 0
+                );
+            background-size: 
+                100% 50%,
+                100% 50%;
+            background-repeat: no-repeat;
+            background-position: 
+                center top,
+                center bottom;
+            margin-left: -34px;
+            animation : up-down 2s infinite;
+        }
+        .download a {
+            display: inline-block;
+            text-decoration: none;
+            font-size: 20px;
+            font-weight: bold;
+            color: #b34700;
+            margin-left: 20px;
+            transform: translateY(-10px);
+        }
+        .download:hover .icon .arrow {
+            animation: up-down 2s infinite;
+        }
+        @keyframes up-down {
+            from {transform: translateY(0);}
+            to {transform: translateY(10px);}
+        }
+    </style>
+</head>
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, impedit.</p>
+    <div class="download">
+        <span class="icon">
+            <span class="cloud"></span>
+            <span class="arrow"></span>
+        </span>
+        <a href="html_tutorial.pdf" download>
+            you cant download the HTML manual here
+        </a>  
+    </div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, quas.</p>
+</body>
+</html>
+
+<!--Doarca pentru ce trebuieste stylesheep-->
