@@ -1,0 +1,118 @@
+body {
+    background: #222;
+    color: white;
+    margin: 0;
+    font-family: sans-serif;
+}
+.contacts ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.contacts li {
+    display: table;
+    padding: .25em;
+}
+.contacts li > * {
+    display: table-cell;
+    vertical-align: middle;
+    transition: 1.0s;
+}
+.contacts li:target > * {
+    transform: translateX(-13em);
+}
+.contacts .ascuns > div {
+    display: inline;
+    width: 0;
+    transition: 1.5s;
+    overflow: hidden;
+}
+.contacts li:target .ascuns > a {
+    text-decoration: none;
+    line-height: middle;
+    display: none;
+    width: 8em;
+    height: 2em;
+    border-radius: 0 1em;
+    background-color: black;
+    color: white;
+}
+.contacts .inceput a.trecere {
+    width: 2em;
+    height: 2em;
+    margin: 0 5px;
+    padding: 0;
+    line-height: 2em;
+    border-radius: 2em;
+    background-color: black;
+    color: white;
+    text-align: center;
+    display: inline-block;
+}
+.contacts .inceput a.trecere {
+    background-color: #777;
+    color: black;
+}
+.contacts .avatar {
+    margin: 0;
+    padding-right: 1em;
+}
+.contacts .avatar img {
+    height: 3em;
+}
+.contacts .avatar .status {
+    width: 0.2em;
+    height: 0.2em;
+    border: 1px solid #777;
+    display: inline-block;
+    border-radius: 0.4em;
+    margin-left: -1em;
+    background-color: #444;
+}
+.contacts .info > span {
+    display: table-row;
+}
+.contacts .action {
+    padding: 0 3em;
+}
+.contacts .action a.add {
+    text-decoration: none;
+    background-color: #111;
+    color: #DDD;
+    display: block;
+    width: 2em;
+    height: 2em;
+    text-align: center;
+    line-height: 2em;
+    border-radius: 2em;
+}
+.contacts .action a.add:hover {
+    background-color: #151515;
+    color: white;
+}
+.contacts .add-details > div {
+   display: inline;
+   /* opacity: 0; */
+   width: 0px;
+   transition: 1.5s;
+   overflow:  hidden;
+}
+.contacts li:target .add-details > div {
+    /* display: table-cell; */
+    /* opacity: 1; */
+    text-decoration: none;
+    color: white;
+    width: 2em;
+    height: 8em;
+    background-color: black;
+    margin-right: 10px;
+    border-radius: 0 1em;
+}
+.contacts .status.off {
+    border: 1px solid #777;
+    background-color: #444;
+}
+.contacts .status.on {
+    border: 1px solid green;
+    background-color: lightgreen;
+}
