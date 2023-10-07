@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>BUTTON</title>
+        <style>
+            body {
+                background-color: #333;
+                color: white;
+            }
+            .control {
+                border: 1px dotted #666;
+                font-family: sans-serif;
+                padding-left: 20px;
+            }
+            .control .question,
+            .control .answer {
+                display: inline-block;
+                vertical-align: middle;
+            }
+            .control .question::after {
+                margin-left: 5px;
+                content: "?";
+            }
+            .control .answer {
+                margin-left: 20px;
+            }
+            .control .answer label {
+                border: 1px solid white;
+                padding: 10px;
+                cursor: pointer;
+            }
+            .control .answer label:first-child {
+                border-radius: 50px 0 0 50px;
+            }
+            .control .answer label:last-child {
+                border-radius: 0 50px 50px 0;
+            }
+            .control .answer label:first-child:checked ~ [for="a-yes"] {
+                border-color: green;
+                background-color: darkgreen;
+            }
+            .control .answer input:nth-child(2):checked ~ [for="a-no"] {
+                border-color: green;
+                background-color: darkgreen;
+            }
+            .control .answer input {
+                display: none;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="control">
+            <h3 class="question">Do you use CSS technology</h3>
+            <div class="answer">
+                <input id="a-yes" name="answer" type="radio" checked>
+                <input id="a-no" name="answer" type="radio" checked>
+                <label>
+                 Yes
+                </label>
+                <label>
+                 No
+                </label>
+            </div>
+        </div>
+    </body>
+</html>
